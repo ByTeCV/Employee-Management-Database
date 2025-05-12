@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database</title>
+        <style>
+        h1 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+        }
+        .container {
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+   </head>
+<body>
+     <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><b>Employee Management System</b></h1>
+    <button class="addbutton">Add</button>
+    <div class="container">
+        <table class="inputtable hidden">
+            <tr>
+                <td>Name </td>
+                <td><input type="text" id="nameinput"></td>
+            </tr>
+            <tr>
+                <td>Date Of Birth </td>
+                <td><input type="date" id="Dobinput"></td>
+            </tr>
+            <tr>
+                <td>Department </td>
+                <td><input type="text" id="Departmentinput"></td>
+            </tr>
+            <tr>
+                <td>Skill </td>
+                <td><input type="text" id="skillinput"></td>
+            </tr>
+        </table>
+        <button class="Submitbutton hidden">Submit</button>
+        <table class="outputtable">
+            <tr>
+                <th>Name</th>
+                <th>DOB</th>
+                <th>Department</th>
+                <th>Skill</th>
+                <th>Update / Delete</th>
+            </tr>
+        </table>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
