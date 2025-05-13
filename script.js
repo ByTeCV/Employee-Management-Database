@@ -39,9 +39,9 @@ document.addEventListener('DOMContentLoaded', function(){
 
     submitButton.classList.add('hidden');
     intable.classList.add('hidden');
-    
-    const upbutton = document.querySelector('.updatebutton');
-    const delbutton = document.querySelector('.deletebutton');
+        
+    const upbutton = newrow.querySelector('.updatebutton');
+    const delbutton = newrow.querySelector('.deletebutton');
 
     delbutton.addEventListener('click',function(){
         outtable.removeChild(newrow);
