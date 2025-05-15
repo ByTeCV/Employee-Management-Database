@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function(){
     addButton.addEventListener('click', function(){
         submitButton.classList.remove('hidden');
         intable.classList.remove('hidden');
+        addButton.classList.add('hidden');
     });
 
     submitButton.addEventListener('click',function(){
@@ -81,9 +82,6 @@ document.addEventListener('DOMContentLoaded', function(){
     departmentin.value = '';
     skillin.value = '';
     passin.value = '';
-
-    submitButton.classList.add('hidden');
-    intable.classList.add('hidden');
     
     const upbutton = newrow.querySelector('.updatebutton');
     const delbutton = newrow.querySelector('.deletebutton');
